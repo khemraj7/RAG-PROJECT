@@ -1,0 +1,75 @@
+# =========================================
+# RAG Application Requirements
+# LLMs: OpenAI + Google Gemini (+ Groq, Mistral)
+# =========================================
+
+python-dotenv
+
+# ---- LangChain ----
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-google-genai
+langchain-groq
+langchain-mistralai
+langchain_huggingface
+langchain-text-splitters
+
+# ---- LLM Providers ----
+openai
+google-genai
+groq
+mistralai
+
+# ---- Vector Database (choose one or more) ----
+chromadb                # local/embedded vector DB
+pinecone-client          # managed cloud vector DB
+faiss-cpu                # in-memory vector search
+qdrant-client             # alternative vector DB
+
+# ---- Embeddings ----
+sentence-transformers    # local embedding models (optional)
+tiktoken                  # OpenAI tokenizer
+
+# ---- Document Loading & Parsing ----
+pypdf
+python-docx
+unstructured
+beautifulsoup4
+python-multipart
+
+# ---- API / Backend ----
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+
+# ---- HTTP Requests ----
+requests
+httpx
+
+# ---- Database (metadata / app DB) ----
+sqlalchemy
+psycopg2-binary          # PostgreSQL driver
+pymongo                   # MongoDB driver (optional)
+redis                      # caching / session store
+
+# ---- Auth / Security (if exposing APIs) ----
+python-jose[cryptography]
+passlib[bcrypt]
+
+# ---- Async / Utilities ----
+tenacity                  # retry logic for API calls
+aiofiles
+
+# ---- Logging & Monitoring ----
+loguru
+
+# ---- Testing ----
+pytest
+pytest-asyncio
+
+# ---- Dev Tools ----
+black
+ruff

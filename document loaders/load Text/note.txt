@@ -1,0 +1,24 @@
+Artificial Intelligence (AI) is the simulation of human intelligence in machines that are 
+programmed to think, learn, and make decisions. It covers a wide range of technologies 
+including machine learning, natural language processing, computer vision, and robotics.
+
+Machine Learning (ML) is a subset of AI that allows systems to learn patterns from data 
+without being explicitly programmed. It powers applications like recommendation systems, 
+fraud detection, and predictive analytics.
+
+Retrieval-Augmented Generation (RAG) is an approach that combines information retrieval 
+with text generation. Instead of relying only on what a language model already knows, 
+RAG systems fetch relevant documents from an external knowledge base and use them as 
+context to generate more accurate and up-to-date answers.
+
+A typical RAG pipeline involves the following steps:
+1. Loading documents from various sources such as text files, PDFs, or web pages.
+2. Splitting the documents into smaller chunks for easier processing.
+3. Converting these chunks into vector embeddings using an embedding model.
+4. Storing the embeddings in a vector database such as Chroma, Pinecone, or FAISS.
+5. Retrieving the most relevant chunks based on a user's query.
+6. Passing the retrieved context along with the query to a language model to generate 
+   a final answer.
+
+This document can be used as sample data to test document loading, chunking, and 
+retrieval in a RAG application.
