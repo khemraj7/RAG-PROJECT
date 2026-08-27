@@ -14,6 +14,7 @@ vectorstore = Chroma(
     embedding_function=embedding_model
 )
 
+# Create a retriever from the vectorstore
 retriever = vectorstore.as_retriever(
     search_type="similarity",
     search_kwargs={"k":3}
